@@ -1,0 +1,47 @@
+.tab {
+  @include indent();
+  width: 100%;
+  max-width: 100%;
+  border: none;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+.tab__row--top,
+.tab--css__row--top {
+  background-color: lightcyan;
+}
+
+.tab__row--bottom,
+.tab--css__row--bottom {
+  background-color: pink;
+}
+
+.tab__data {
+  padding: 20px;
+  text-align: center;
+}
+
+.tab--css {
+  @include indent();
+  width: 100%;
+  max-width: 100%;
+  display: table;
+  border: none;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+.tab--css__row {
+  @include indent();
+  width: 100%;
+  max-width: 100%;
+  display: table-row;
+}
+
+.tab--css__data {
+  @include indent();
+  padding: 20px;
+  text-align: center;
+  display: table-cell;
+}

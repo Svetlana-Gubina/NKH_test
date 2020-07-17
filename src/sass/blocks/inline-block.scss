@@ -1,0 +1,32 @@
+.inline-block {
+  @include indent();
+}
+
+.inline-block__row {
+  width: 100%;
+  max-width: 100%;
+  @include indent();
+}
+
+
+.inline-block__row--top .inline-block__column {
+  background-color: lightcyan;
+}
+
+.inline-block__row--bottom .inline-block__column {
+  background-color: pink;
+}
+
+.inline-block__column {
+  @include indent();
+  width: 22%;
+  max-width: 22%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+  text-align: center;
+}
+
+.inline-block__column-heading {
+  @include indent();
+}

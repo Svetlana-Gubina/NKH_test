@@ -1,0 +1,33 @@
+.flex {
+  @include flex();
+  flex-direction: column;
+}
+
+.flex__row {
+  @include flex();
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+.flex__row--top .flex__column {
+  background-color: lightcyan;
+}
+
+.flex__row--bottom .flex__column {
+  background-color: pink;
+}
+
+.flex__column {
+  @include flex();
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__column--centered {
+  align-self: center;
+}

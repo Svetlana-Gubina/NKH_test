@@ -1,0 +1,32 @@
+.float {
+  @include indent();
+}
+
+.float:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float__row {
+  @include indent();
+  width: 100%;
+  max-width: 100%;
+}
+
+.float__row--top .float__column {
+  background-color: lightcyan;
+}
+
+.float__row--bottom .float__column {
+  background-color: pink;
+}
+
+.float__column {
+  @include indent();
+  width: 22%;
+  max-width: 22%;
+  margin: 20px;
+  float: left;
+  text-align: center;
+}

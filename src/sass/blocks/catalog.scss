@@ -1,0 +1,29 @@
+.catalog {
+  width: 100%;
+  max-width: 100%;
+  @include indent();
+}
+
+.catalog__title {
+  @include title();
+}
+
+.catalog--flex,
+.catalog--inline-block,
+.catalog--float {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.catalog__heading {
+  font-size: 20px;
+  line-height: 1.5;
+  @include indent();
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.catalog__text {
+  @include indent();
+  padding: 10px;
+}
