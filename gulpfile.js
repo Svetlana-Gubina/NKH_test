@@ -81,7 +81,7 @@ exports.normalize = normalize;
 // Scripts
 
 const scripts = () => {
-  return gulp.src(dir.src + 'js/main.js')
+  return gulp.src(dir.src + 'js/*.js')
         .pipe(sourcemap.init())
         .pipe(babel({
             presets: ['@babel/env']

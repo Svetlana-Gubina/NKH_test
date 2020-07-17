@@ -14,3 +14,36 @@
 .menu__item-content {
   @include indent();
 }
+
+// js
+
+.menu__item-heading--js {
+  @include indent();
+  padding: 15px;
+  background-color: lightcyan;
+  cursor: pointer;
+}
+
+.menu__item--js {
+  margin-bottom: 10px;
+}
+
+.menu__item--js:last-child {
+  margin-bottom: 0;
+}
+
+.menu__item-content--js {
+  background-color: pink;
+  display: none;
+}
+
+.menu__item--js.show .menu__item-content--js {
+  @include indent();
+  padding: 15px 20px;
+  display: block;
+}
+
+.menu__item.show.menu__item-heading--js {
+  background-color: lightcyan;
+}
+
