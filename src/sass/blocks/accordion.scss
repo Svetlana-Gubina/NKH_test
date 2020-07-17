@@ -6,24 +6,11 @@
 }
 
 .menu__item {
-  margin-bottom: 10px;
-}
-
-.menu__item:last-child {
-  margin-bottom: 0;
+  @include indent();
+  padding: 15px 20px;
+  background-color: pink;
 }
 
 .menu__item-content {
-  background-color: pink;
-  display: none;
-}
-
-.menu__item.show .menu__item-content {
   @include indent();
-  padding: 15px 20px;
-  display: block;
-}
-
-.menu__item.show .menu__item-heading {
-  background-color: lightcyan;
 }
